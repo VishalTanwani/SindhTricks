@@ -1,0 +1,1755 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>
+			Sindhzz Tricks - Making you Technical
+		</title>
+        <style>
+			.body
+			{
+				display:flex;
+				
+				flex-direction:column;
+			}
+			body
+			{
+				background-color:#F7F7F7;
+			}
+			.bodyheader
+			{
+				display:flex;
+				flex-direction:column;
+			}
+			.bodyfooter
+			{
+				display:flex;
+				flex-direction:column;
+			}
+			.bodyleft
+			{
+				display:flex;
+				flex-direction:column;
+			}
+			.bodyright
+			{
+				display:flex;
+				flex-direction:column;
+			}
+            .a
+            {
+                height: 35px;
+				width:100%;
+				background-color: #F7F7F7;
+				font-size: 10px;
+				font-weight: 400;
+            }
+			.lts
+			{
+				height: 30px;
+				line-height: 30px;
+				overflow: hidden;
+				width: 25%;
+				margin-left:150px;
+				float: left;
+			}
+			.latest
+			{
+				position: absolute;
+				display: block;
+				float: left;
+				font-family:Arial, Helvetica, sans-serif;
+				font-size: 12px;
+				font-weight: 600;
+				background: #ff680d;
+				color: white;
+				padding: 2.5px 10px;
+			}
+			.date
+			{
+				float: left;
+				font-family:Arial, Helvetica, sans-serif;
+				line-height: 35px;
+				margin: 0;
+				font-size: 11px;
+			}
+			.topnav
+			{
+				height: 35px;
+				background-color: #F7F7F7;
+				display:block;
+				overflow:hidden;
+				float:right;
+				position:relative;
+				margin-right:100px; 
+			}
+			.topnava:hover 
+			{ 
+				color: #b1aeae; 
+				text-decoration: none; 
+				font-weight: none 
+			}
+			.topnava
+			{
+				text-align:center;
+				display: block;
+				letter-spacing: 0.5px;
+				font-size:12px;
+				padding: 10px 10px;
+				float:left;
+				text-decoration:none;
+				font-weight:bold; 
+				border-right: 1px solid #ECECEC;
+				color: black;
+			}
+			.topnav .icon
+			{
+				display:none;
+			}
+            .b
+            {
+                width: 100%;
+                background-color:white;
+                height: 260px;
+				margin-bottom:30px;
+            }
+			.bimg
+			{
+				display:block; 
+				margin-left:150px;
+				width:300px;
+				height:200px;
+			}
+			.bb
+            {
+                background:#fff;    
+				box-shadow: 1px 0px 9px -5px rgba(0,0,0,0.75);
+            }
+			.bb ul
+			{
+				height: 60px;
+				width: 1100px;
+				background: #3e454c;
+			}
+			.bb a 
+			{
+				display: block;
+				line-height: 60px;
+				padding: 0 14px;
+				text-decoration: none;
+				color: #fff;
+				font-weight: bold;
+			}
+			.bb li
+			{
+				float: left;
+				display: inline;
+				position: relative;
+				font-size: 13px;
+				font-weight: bold;
+				text-transform: uppercase;
+				
+			}
+			.bb ul, .bb li 
+			{
+				margin: 0 auto;
+				padding: 0 0;
+				list-style: none;
+			}
+			.bb .home a
+			{
+				background-color: #ff680d;
+			}
+			.bb a:hover
+			{
+				background-color: #ff680d;
+			}
+			
+			.bb ul.menus 
+			{
+				height: auto;
+				overflow: hidden;
+				width: 170px;
+				background: #3e454c;
+				position: absolute;
+				z-index: 99;
+				display: none;
+			}
+			.bb ul.menus li 
+			{
+				display: block;
+				width: 100%;
+				text-transform: none;
+				text-shadow: none;
+			}
+			.bb ul.menus a 
+			{
+				color: #fff;
+				line-height: 50px;
+			}
+			.bb li:hover ul.menus
+			{
+				display:block;
+			}
+			.bb label 
+			{
+				font: bold 23px Arial;
+				display: none;
+				width: 180px;
+				height: 36px;
+				line-height: 36px;
+				text-align: left;
+			}
+			.bb input 
+			{
+				display: none;
+				margin: 0 0;
+				padding: 0 0;
+				width: 91px;
+				height: 30px;
+				opacity: 0;
+				cursor: pointer;
+			}
+			.mySlides
+			{
+				display:none;
+				
+			}
+            .c
+            {
+                width: 50%;
+                background-color:white;
+                height: 320px;
+				padding:10px 10px;
+				position:relative;
+				color:white;
+				margin-left:120px;
+                font-size: 40px;
+            }
+			.c h2
+			{
+				width:50%;
+				margin: 0;
+				padding: 5px 25px 10px;
+				color: #fff;
+				font-size: 25px;
+				line-height: 1.1em;
+				background: rgba(0,0,0,0.3);
+				font-weight: 600;
+				position:absolute;
+				top:50%;
+				left:10px;
+			}
+			.c h3
+			{
+				position:absolute;
+				width:50%;
+				height:50px;
+				top:32.5%;
+				left:10px;
+			    margin: 0;
+				padding: 5px 25px;
+				background: rgba(0,0,0,0.6);
+			}
+			.c a
+			{
+				color:white;
+			}
+			.c a:hover
+			{
+				color:blue;
+			}
+            .d
+            {
+                width: 30%;
+                background-color:white;
+                height: auto;
+				float:right;   
+				border: 1px solid rgba(230, 230, 230, 0.68);
+				position:absolute;
+                margin-left: 760px;
+            }
+			.h2
+			{
+				    font-weight: 700;
+					transition: all 0.5s ease-out;
+					text-transform: uppercase;
+					color: #ff680d;
+					box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+					font-size: 14px;
+					line-height: 28px;
+					padding: 12px;
+					top:0;
+					text-align: center;
+					margin: 0;
+			}
+			.h2:before 
+			{
+				content: " ";
+				display: block;
+				height: 2px;
+				width: 60%;
+				margin: 0 auto;
+				background: #ff680d;
+				position: absolute;
+				left:20%;
+				top:32%;
+			}
+			.dform
+			{
+				position:relative;
+				margin:auto;
+				text-align:center;
+			}
+			.dsearch
+			{
+				background: #F5F5F5;
+				color: #717171;
+				font: 600 15px/12px Poppins;
+				margin: 20px;
+				padding: 0 20px;
+				width: 80%;
+				height: 65px;
+				outline: 0;
+				border: 0;
+				box-shadow: initial;
+				line-height: normal;
+				transition: all .1s;
+			}
+			.searchsubmit 
+			{
+				background-color: #ff680d;
+				border: 0;
+				color: #fff;
+				display: inline-block;
+				position: absolute;
+				right: 5%;
+				height: 65px;
+				top: 20%;
+				padding: 0 40px;
+				transition: all .2s;
+			}
+			.dd
+            {
+                width: 30%;
+                background-color:aqua;
+                height: 180px;
+				position:absolute;
+				margin-top:170px;
+                margin-left: 760px;
+                text-align: center;
+                font-size: 30px;
+            }
+			.ddd
+            {
+                width: 30%;
+                background-color:lightgreen;
+                height: 280px;
+				position:absolute;
+				margin-top:360px;
+                margin-left: 760px;
+                text-align: center;
+                font-size: 30px;
+            }
+            .e
+            {
+                width: 50%;
+                background-color:white;
+                height: 660px;
+				padding:10px 10px;
+				position:relative;
+				display:flex; 
+				margin-left:120px;
+            }
+			.etop
+			{
+				position: relative;
+				overflow: hidden;
+				margin-bottom: 10px;
+				font-size: 16px;
+				font-weight: 700;
+				padding: 4px 8px;
+				transition: all 0.5s ease-out;
+				text-transform: uppercase;
+				border-left-color: #ff680d;
+				border-left: 3px solid #ff680d;
+				float: left;
+			}
+			.etop a
+			{
+				color:#ff680d;
+				text-decoration:none;
+			}
+			.etop a:hover
+			{
+				color:#4d90fe;
+			}
+			.etopleft
+			{    
+				position: relative;
+				overflow: hidden;
+				font-size: 11.5px;
+				font-weight: 400;
+				float: right;
+				padding: 6px;
+				margin-right:15px;
+				border: 1px solid rgb(221, 221, 221);
+				background: rgba(240, 241, 243, 0.48);
+			}
+			.etopleft a
+			{
+				color:black;
+				text-decoration:none;
+			}
+			.etopleft a:hover
+			{
+				color:#4d90fe;
+			}
+            .e1
+            {
+                width: 48%;
+				position:absolute;
+                background-color:white;
+                height: 660px;
+				float:left;
+				display:block;
+            }
+			.ee1
+            {
+                width: 98%;
+                background-color:white;
+                height: 380px;
+				float:left;
+				overflow:hidden;
+				margin-left:4px;
+				border-bottom:1px solid #ded9d9
+            }
+			.eeImg
+			{
+				width:98%;
+				height:225px;
+				transform: scale(1.0);
+				transition: 0.9s;
+				margin-bottom:8px;
+				overflow:hidden;
+			}
+			.eeImg:hover
+			{
+				height:225px;
+				transform: scale(1.02);
+				opacity:0.7;
+				background-color:black;
+			}
+			.eetext a
+			{
+				font-size:18px;
+				margin-top:-10px;
+				text-align:left;	
+				text-decoration:none;
+				color:black;
+				font-weight:bold;
+			}
+			.eetext a:hover
+			{
+				font-size:18px;
+				text-align:left;	
+				text-decoration:none;
+				color:#4d90fe;
+			}
+			.toe 
+			{
+				overflow: hidden;
+				display: block;
+				font-size:13px;
+				margin-bottom: 5px;
+				margin-top: 10px;
+			}
+			.post-date:before 
+			{
+				content: "\f017";
+				font-family: FontAwesome;
+				display: inline-block;
+				margin-right: 3px;
+			}
+			.recent-com:before 
+			{
+				content: "\f075";
+				font-family: FontAwesome;
+				/* display: inline-block; */
+				margin-right: 3px;
+			}
+			.ee2
+            {
+                width: 98%;
+                background-color:white;
+                height: 100px;
+				float:left;
+				margin-left:4px;
+				overflow: hidden;
+				margin-top:10px;
+            }
+			.eetext2 a
+			{
+				font-size:14px;
+				margin-top:10px;
+				text-align:left;	
+				text-decoration:none;
+				color:black;
+				font-weight:bold;
+			}
+			.eetext2 a:hover
+			{
+				font-size:14px;
+				text-align:left;	
+				text-decoration:none;
+				color:#4d90fe;
+			}
+			.ee2img
+			{
+				height:80px;
+				margin-top:5px;
+				float:left; 
+				margin-right:5px;
+				width:120px;
+			}
+            .e2
+            {
+                width: 48%;
+				position:absolute;
+                background-color:white;
+                height: 660px;
+                float: right;
+				margin-left:310px;
+            }
+            .f
+            {
+				height: 280px;
+				overflow: hidden;
+				width: 50%;
+                background-color:white;
+				padding:10px 10px;
+				position:relative;
+				margin-left:120px;
+            }
+			.ftext a
+			{
+				font-size:18px;
+				margin-top:-10px;
+				text-align:left;				
+				text-decoration:none;
+				color:black;
+				font-weight:bold;
+			}
+			.ftext a:hover
+			{
+				font-size:18px;
+				text-align:left;	
+				text-decoration:none;
+				color:#4d90fe;
+			}
+			.farow
+			{
+				text-align:center;
+				float:right;
+				width: 25px;
+				height: 30px;
+				background: #ff680d;
+				color: #fff;
+				right:0;
+				position: relative;
+				overflow: hidden;
+				float: right;
+			}
+			.farow:hover
+			{
+				display: block;
+				text-align:center;
+				float:right;
+				width: 25px;
+				height: 30px;
+				cursor: pointer;
+				background: #f5f6f7;
+				color: #fff;
+				z-index: 99;
+				transition: all .3s;
+			}
+			.fimgs
+			{
+				width:100%;
+				height:auto;
+				overflow:hidden;
+				float:left;
+				display:flex;
+			}
+			.fImgText
+			{
+				width:280px;
+				float:left;
+				height:240px;
+				display:flex;
+				margin-right:10px;
+			}
+			.fImgText a
+			{
+				overflow: hidden;
+				position: absolute;
+				top:76%;
+				text-decoration:none;
+				background-color:#1d21298c;
+				display: inline-block;
+				color: #fff;
+				line-height: 1.3;
+				padding: 10px 10px;
+				font-size: 14px;
+				margin: auto;
+				transition: all .2s;
+				font-weight: 600;
+				width:260px;
+				transition: all .3s;
+			}
+			.fImgText a:hover
+			{
+				overflow: hidden;
+				position: absolute;
+				top:76%;
+				text-decoration:none;
+				background-color:#ff680d;
+				display: inline-block;
+				color: #fff;
+				line-height: 1.3;
+				padding: 10px 10px;
+				font-size: 14px;
+				margin: auto;
+				transition: all .2s;
+				font-weight: 600;
+				width:260px;
+				transition: all .3s;
+			}
+            .g
+            {
+                width: 50%;
+                background-color:white;
+                margin-left: 120px;
+				padding:10px 10px;
+				display:block;
+				position:relative;
+            }
+			.h
+            {
+                width: 100%;
+				margin-top:6px;
+				float:left;
+                background-color:white;
+                height: 180px;
+				border-bottom: 1px solid #ded9d9;
+            }
+			
+			.htext2 a
+			{
+				margin-top:10px;
+				text-align:left;	
+				text-decoration:none;
+				color:black;
+				font-size:25px;
+				font-weight:bold;
+			}
+			.htext2 p
+			{
+				font-size:20px;
+			}
+			.htext2 a:hover
+			{
+				font-size:25px;
+				text-align:left;	
+				text-decoration:none;
+				color:#4d90fe;
+			}
+			.himg
+			{
+				height:160px;
+				margin-top:5px;
+				float:left; 
+				margin-right:5px;
+				width:220px;				
+			}
+			
+            .i
+            {
+                width: 30%;
+                background-color:#6800FE;
+                height: 600px;
+				position:absolute;
+				margin-top:650px;
+                margin-left: 830px;
+                text-align: center;
+                font-size: 30px;
+            }
+			.p
+            {
+                width: 30%;
+                background-color:#FE00D4;
+                height: 300px;
+				position:absolute;
+				margin-top:1270px;
+                margin-left: 830px;
+                text-align: center;
+                font-size: 30px;
+            }
+			.q
+            {
+                width: 30%;
+                background-color:#70DED9;
+                height: 300px;
+				position:absolute;
+				margin-top:1585px;
+                margin-left: 830px;
+                text-align: center;
+                font-size: 30px;
+            }
+			.r
+            {
+                width: 30%;
+                background-color:Yellow;
+                height: 530px;
+				position:absolute;
+				margin-top:1895px;
+                margin-left: 830px;
+                text-align: center;
+                font-size: 30px;
+            }
+			.s
+            {
+                width: 30%;
+                background-color:Blue;
+                height: 543px;
+				position:absolute;
+				margin-top:2435px;
+                margin-left: 830px;
+                text-align: center;
+                font-size: 30px;
+            }
+			.o
+            {
+                background-color:#ff680d;
+				padding:10px;
+				color:white;
+				text-transform:uppercase;
+				font-weight:bold;
+				border:2px solid #ff680d;
+				text-decoration:none;
+				width:170px;
+				margin-left: 550px;
+				text-align: center;
+				font-size: 20px;  
+				transition: all 1s ease-out;
+				animation: BounceRate 3s;
+            }
+			.o:hover
+            {
+                background-color:white;  
+				transition: all 1s ease-out;
+				animation: BounceRate 3s;
+				padding:10px;
+				color:#ff680d;
+				font-weight:bold;
+				border:2px solid #ff680d;
+				text-decoration:none;
+				width:170px;
+				margin-left: 617px;
+				text-align: center;
+				font-size: 20px;
+            }
+            .j
+            {
+                width: 100%;
+                background-color:lime;
+                height: 90px;
+				margin-top:5px;
+                text-align: center;
+                font-size: 40px;;
+            }
+            .k
+            {
+                width: 50%;
+                background-color:white;
+                height: auto;
+				margin-top:10px;
+				margin-left:120px; 
+				padding:10px;
+            }
+			.kImg
+			{
+				width:300px;;
+				height:250px;
+				transform: scale(1.0);
+				transition: 0.9s;
+				float:left;
+				margin-bottom:8px;
+				margin-right:10px;
+				overflow:hidden;
+			}
+			.kImg:hover
+			{
+				float:left;
+				opacity: 0.7;
+				max-height:300px;
+				transform: scale(1.02);
+				background-color:black;
+			}
+			.ktext2 a
+			{
+				font-size:25px;
+				margin-top:10px;
+				text-align:left;	
+				text-decoration:none;
+				color:black;
+				font-weight:bold;
+			}
+			.ktext2 a:hover
+			{
+				font-size:25px;
+				text-align:left;	
+				text-decoration:none;
+				color:#4d90fe;
+			}
+			.kA
+			{
+				font-size:15px;
+				margin-top:10px;
+				text-align:left;
+				background-color:#ff680d;
+				text-decoration:none;
+				border-radius:20px;
+				padding:10px;
+				color:white;
+				font-weight:bold;
+			}
+			.kA:hover
+			{
+				font-size:15px;
+				text-align:left;	
+				text-decoration:none;
+				color:black;
+			}
+			.k p
+			{
+				font-size:20px;
+			}
+            .l
+            {
+                width: 100%;
+				background-color: rgb(66, 66, 66);
+                height: auto;
+				color:white;
+				font-size:15px;
+				padding-bottom:40px;
+                text-align: center;
+            }
+			.l a
+			{
+				text-decoration:none;
+				color:white;
+			}
+			.l a:hover
+			{
+				text-decoration:none;
+				color:#ff680d;
+				transition: color 0.2s;
+			}
+            .m
+            {
+                width: 100%;
+                background-color:white;
+                height: auto;                
+                text-align: center;
+            }
+			.m a
+			{
+				text-decoration:none;
+				color:#ff680d;
+				font-size:20px;
+				transition: color 0.2s;
+			}
+			.m a:hover
+			{
+				text-decoration:none;
+				color:#4d90fe;
+				font-size:20px;
+				transition: color 0.2s;
+			}
+			.fac
+			{
+				width: 45px;
+				height:40px;
+				text-align: center;
+				line-height:40px;
+				padding:5px;
+				font-size:25px;
+				text-decoration: none;
+			}
+			.fac:hover 
+			{
+				transform: scale(1.05);
+			}						
+			.fa-facebook 
+			{
+			  background: #3B5998;
+			  color: white;
+			}
+			.fa-instagram 
+			{
+			  background: #125688;
+			  color: white;
+			}
+			.fa-tumblr {
+			  background: #2c4762;
+			  color: white;
+			}
+			.fa-pinterest 
+			{
+			  background: #cb2027;
+			  color: white;
+			}
+
+			.fa-twitter {
+			  background: #55ACEE;
+			  color: white;
+			}
+
+			.fa-google {
+			  background: #dd4b39;
+			  color: white;
+			}
+
+			.fa-linkedin {
+			  background: #007bb5;
+			  color: white;
+			}
+
+			@media screen and (max-width:700px)
+			{
+				.bodyleft
+				{
+					order:1;
+				}
+				.bodyright
+				{
+					order:2;
+				}
+				.bodyheader
+				{
+					order:0;
+				}
+				.bodyfooter
+				{
+					order:3;
+				}
+				.a
+				{
+					width: 100%;
+					background-color: #F7F7F7;
+					height: 40px;
+					text-align: center;
+					font-size: 30px;
+				}
+				.lts
+				{
+					height: 30px;
+					line-height: 30px;
+					overflow: hidden;
+					width: 25%;
+					margin-left:0px;
+					float: left;
+				}
+				.latest
+				{
+					position: absolute;
+					display: block;
+					float: left;
+					font-family:Arial, Helvetica, sans-serif;
+					font-size: 12px;
+					font-weight: 600;
+					background: #ff680d;
+					color: white;
+					padding: 2.5px 10px;
+				}
+				.date
+				{
+					float: left;
+					font-family:Arial, Helvetica, sans-serif;
+					line-height: 35px;
+					margin-left:90px;
+					font-size: 11px;
+				}
+				.topnav
+				{
+					background-color: #F7F7F7;
+					display:block;
+					overflow:visible;
+					float:right;
+					position:absolute;
+					right:0;
+					margin-right:0px; 
+					z-index:1000;
+				}
+				.topnava
+				{
+					text-align:center;
+					display: block;
+					letter-spacing: 0.5px;
+					font-size:12px;
+					padding: 10px 10px;
+					text-decoration:none;
+					font-weight:bold; 
+					border-right: 1px solid #ECECEC;
+					color: black;
+					background-color: #F7F7F7;
+					float:none;
+				}
+				.topnav a{display: none;} 
+				.topnav a.icon 
+				{
+					float: right;
+					display: block;
+				}
+				.topnav.responsive .icon 
+				{
+					position: absolute;
+					right: 0;
+					top: 0;
+				}
+				.topnav.responsive .topnava 
+				{
+					float: none;
+					display: block;
+				}
+				.b
+				{
+					width: 100%;
+					background-color:white;
+					height: 250px;
+					text-align: center;
+					font-size: 40px;
+				}
+				.bimg
+				{
+					margin-left:0;
+					max-width:663px;
+					width:100%;
+					height:250px;
+				}
+				.bb
+				{
+					width: 100%;
+					background-color:#fff;
+					height: 40px;
+					position:relative;
+				}
+				.bb label, .bb input
+				{
+				    position: absolute;
+					top: 0;
+					left: 0;
+					display: block;
+				}
+				.bb input
+				{
+					z-index:4;
+				}
+				.bb ul, .bb li {
+					margin: 0 auto;
+					padding: 0 0;
+					list-style: none;
+				}
+				.bb ul
+				{
+					background: #111;
+					position: absolute;
+					top: 100%;
+					right: 0;
+					left: 0;
+					width:auto;
+					z-index: 3;
+					height: auto;
+					display: none;
+				}
+				.bb ul.menus 
+				{
+					width: 100%;
+					position: static;
+					padding-left: 20px;
+				}
+				.bb li 
+				{
+					display: block;
+					float: none;
+					width: auto;
+				}
+				#menu input:checked ~ ul 
+				{
+					display: block;
+				}
+				.c
+                {
+                    display: none;                  
+                }
+                .e
+                {
+                    width: 100%;
+                    margin-left: 0px;
+                    background-color:white;
+                    height: auto;					
+                    display:block;
+                }
+                .e1
+                {
+                    width: 100%;
+                    position:static;
+                    background-color:white;
+                    height: 660px;
+                    display:block;
+                }
+                .e2
+                {   
+                    width: 100%;
+                    background-color:white;
+                    height: 660px;
+                    position: static;
+                    margin-left: 0px;
+                }
+                .ee1
+                {
+                    width: 100%;
+                    background-color:white;
+                    height: 380px;
+                    margin-left:0px;
+                    position: static;                    
+                }
+                .ee2
+                {
+                    width: 100%;
+                    background-color:white;
+                    height: 100px;
+                    margin-left: 0px;
+                    margin-top: 10px;
+                    position: static;
+                }
+				.eeImg
+				{
+					width:98%;
+					height:225px;
+					transform: scale(1.0);
+					transition: 0.9s;
+					margin-bottom:0px;
+					overflow:hidden;
+				}
+                .f
+                {
+				    width: 100%;
+                    background-color:white;
+                    height: 280px;
+                    margin-left:0px;
+                    text-align: center;
+                    font-size: 40px;
+					margin-top:10px;
+                }
+				.g
+                {
+				    width: 100%;
+                    background-color:white;
+                    margin-left: 0px;
+					padding:10px 10px;
+					display:block;
+					position:relative;
+                }
+                .h
+                {
+                    width: 100%;
+                    margin-top:6px;
+				    background-color:white;
+                    height: 150px;
+                }
+				.htext2 a
+				{
+					margin-top:10px;
+					text-align:left;	
+					text-decoration:none;
+					color:black;
+					margin-top:-5px;
+					font-size:20px;
+					font-weight:bold;
+				}
+				.htext2 p
+				{
+					display:none;
+				}
+				.htext2 a:hover
+				{
+					font-size:20px;
+					text-align:left;
+					margin-top:-5px;	
+					text-decoration:none;
+					color:#4d90fe;
+				}
+				.himg
+				{
+					height:130px;
+					margin-top:5px;
+					float:left; 
+					margin-right:5px;
+					width:180px;				
+				}
+                .k
+                {
+                    width: 100%;
+					background-color:white;
+                    height: auto;
+                    margin-top:10px;
+                    margin-left:0px; 
+                }
+				.d
+				{
+					width: 100%;
+					background-color:yellow;
+					height: 160px;
+					position:static;
+					margin-left: 0px;
+					text-align: center;
+					font-size: 40px;;
+				}
+				.dd
+				{
+					width: 100%;
+					margin-top: 10px;
+					background-color:aqua;
+					height: 180px;
+					position:static;
+					margin-left: 0px;
+					text-align: center;
+					font-size: 30px;
+				}
+				.ddd
+				{
+					width: 100%;
+					background-color:lightgreen;
+					height: 280px;
+					margin-top: 10px;
+					position:static;
+					margin-left:0px;
+					text-align: center;
+					font-size: 30px;
+				}
+				.i
+				{
+					width: 100%;
+					background-color:#6800FE;
+					height: 600px;
+					position:static;
+					margin-top: 10px;
+					margin-left: 0px;
+					text-align: center;
+					font-size: 30px;
+				}
+				.p
+				{
+					width: 100%;
+					background-color:#FE00D4;
+					height: 300px;
+					margin-top: 10px;
+					position:static;
+					margin-left: 0px;
+					text-align: center;
+					font-size: 30px;
+				}
+				.q
+				{
+					width: 100%;
+					background-color:#70DED9;
+					height: 300px;
+					margin-top: 10px;
+					position:static;
+					margin-left: 0px;
+					text-align: center;
+					font-size: 30px;
+				}
+				.r
+				{
+					width: 100%;
+					background-color:Yellow;
+					height: 530px;
+					margin-top: 10px;
+					position:static;
+					margin-left: 0px;
+					text-align: center;
+					font-size: 30px;
+				}
+				.s
+				{
+					width: 100%;
+					background-color:Blue;
+					height: 543px;
+					margin-top: 10px;
+					position:static;
+					margin-left: 0px;
+					text-align: center;
+					font-size: 30px;
+				}
+				.o
+				{
+					background-color:#00FEA6;
+					height:50px;
+					text-decoration:none;
+					width:150px;
+					line-height;10px;
+					margin-top: 10px;
+					margin-left: auto;
+					text-align: center;
+					font-size: 20px;
+				}
+				.l
+				{
+					width: 100%;
+					background-color:rgb(255, 1, 77);
+					height: 600px;    
+					text-align: center;
+					font-size: 40px;;
+				}
+				.m
+				{
+					width: 100%;
+					background-color:rgb(47, 177, 252);
+					height: 400px;                
+					text-align: center;
+					font-size: 40px;;
+				}
+			}
+        </style>
+		<script language="javascript">
+			var today = new Date();
+			document.getElementById('time').innerHTML=today;
+		 </script>
+    </head>
+    <body>
+		<div class="body">
+			<div class="bodyheader">
+				<header class="a">
+					<div class="lts">
+						<span class="latest">Latest Updates</span>						
+					</div>
+					<div class="date">
+						<script language="Javascript">
+							var dayName = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+							var monName = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+							var now = new Date();
+							document.write("Today is " + dayName[now.getDay()] + ", " + monName[now.getMonth()] + " " + now.getDate() + ".");
+						</script>
+						<script>
+							atoj = new Date();
+							atoj1 = atoj.getHours();
+							atoj2 = atoj.getMinutes();
+							atoj3 = atoj.getSeconds();
+							if (0 == atoj1) {
+							  atoj4 = " AM";
+							  atoj1 = 12;
+							} else if (atoj1 <= 11) atoj4 = " AM"; else if (12 == atoj1) {
+							  atoj4 = " PM";
+							  atoj1 = 12;
+							} else if (atoj1 >= 13) {
+							  atoj4 = " PM";
+							  atoj1 -= 12;
+							}
+							if (atoj2 <= 9) atoj2 = "0" + atoj2;
+							document.write(" |  " + atoj1 + ":" + atoj2 + ":" + atoj3 + atoj4);
+						</script>
+					</div>
+					<div class="topnav" id="myTopnav">
+						<a class="topnava" href="#"></a>
+						<a class="topnava" href="#">About us</a>
+						<a class="topnava" href="#">Contact us</a>
+						<a class="topnava" href="#">Privacy Policy</a>
+						<a class="topnava" href="#">Terms of Use</a>
+						<a class="topnava" href="#">Sitemap</a>
+						<a href="javascript:void(0);" class="topnava icon" onclick="myFunction()">
+							<i class="fa fa-bars"></i>
+						</a>
+					</div>
+					<script>
+						function myFunction() {
+						  var x = document.getElementById("myTopnav");
+						  if (x.className === "topnav") {
+							x.className += " responsive";
+						  } else {
+							x.className = "topnav";
+						  }
+						}
+					</script>
+				</header>
+				<section class="b">
+					<a>
+						<img class="bimg" src="https://2.bp.blogspot.com/-nCCFDbHnyRE/XCy-JDufhYI/AAAAAAAAOgs/xoBJTGOIW10TekksBuxx-556fDrfLtGRACK4BGAYYCw/s1600/onlinelogomaker-102716-1417-1590.png"/>
+					</a>
+					<center>
+						<nav id="menu" class="bb">
+							<input type="checkbox">
+							<label style="margin-left:5px;">
+								<i class="fa fa-bars"></i> Menu
+							</label>
+							<ul>
+								<li class="home">
+									<a href="#"><i class="fa fa-home"></i>Home</a>
+									<ul class="menus">
+										<li><a href="#">About Us</a></li>
+										<li><a href="#">Contact Us</a></li>
+										<li><a href="#">Sitemap</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Android Tricks</a></li>
+								<li><a href="#">Computer Tricks</a></li>
+								<li><a href="#">Online Deals<i class="fa fa-chevron-down"></i></a>
+									<ul class="menus">
+										<li><a href="#">Amazon</a></li>
+										<li><a href="#">Paytm</a></li>
+										<li><a href="#">Freecharge</a></li>
+										<li><a href="#">Flipkart</a></li>
+										<li><a href="#">Book My show</a></li>
+										<li><a href="#">Snapdeal</a></li>
+										<li><a href="#">Mobikwik</a></li>
+										<li><a href="#">ShopClues</a></li>
+										<li><a href="#">Ebay</a></li>
+										<li><a href="#">Payzapp</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Refer &amp; Earn</a></li>
+								<li><a href="#">Whatsapp Zone<i class="fa fa-chevron-down"></i></a>
+									<ul class="menus">
+										<li><a href="#">Whatsapp MODS</a></li>
+										<li><a href="#">Whatsapp DP</a></li>
+										<li><a href="#">Whatsapp Status</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Tech trends</a></li>
+								<li><a href="#">Network Tricks<i class="fa fa-chevron-down"></i></a>
+									<ul class="menus">
+										<li><a href="#">Airtel</a></li>
+										<li><a href="#">Idea</a></li>
+										<li><a href="#">jio</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</center>
+				</section>				
+			</div>
+			<div class="bodyright">
+				<section class="d">
+					<h2 class="h2">
+						search blog
+					</h2>
+					<form action="/search" method="get" class="dform">
+						<input type="text" placeholder="Search Here..." class="dsearch" name="search" value>
+						<input type="submit" class="searchsubmit">
+					</form>
+				</section>
+				<section class="dd">GET CONNECTED ON FACEBOOK</section>
+				<section class="ddd">SOCIAL MEDIA</section>
+				<section class="i">POPULAR POSTS
+					<section class="j">Whats app group links</section>
+					<section class="j">Whats app group links2</section>
+					<section class="j">How to use paytm</section>
+					<section class="j">ONLINE sms bomber</section>
+					<section class="j">how to use fats2sms</section>
+					<section class="j">Contact us</section>
+				</section>
+				<section class="p">Email Subscribe</section>
+				<section class="q">STATS</section>
+				<section class="r">Google ADs</section>
+				<section class="s">Google ADs</section>
+			</div>
+			<div class="bodyleft">
+				<section class="c">
+					<div class="mySlides">
+						<img  width="100%" height="320px" src="https://1.bp.blogspot.com/-uQ2a09M_2YA/WyKgkPcNniI/AAAAAAAAIn8/qxnpB4f9FvMZs1kaFI4N74k9OAEFvt5QACLcBGAs/s753-h380-c/maxresdefault-1.jpg">
+						<h3 style="font-size:15px;">
+							<div style="margin-top:20px;">
+								<a style=" text-align:center; text-decoration:none; padding:5px 5px; background-color:#ff680d; text-transform:uppercase; color:white;" href="#">deals</a>
+								<i> - September 22, 2017 / 
+									<a style=" margin-top:10px;text-decoration:none; padding:5px 5px; background-color:#ff680d; text-transform:uppercase; color:white;" href="#">
+										<small>3 Comments</small>
+									</a>
+								</i>
+							</div>
+						</h3>
+						<h2><a class="ca" style="text-decoration:none;" href="#">VivoBook S - A Perfect  Performer Which is #BeyondTheEgde by #AsusIndia</a></h2>
+					</div>
+					<div class="mySlides">
+						<img  width="100%" height="320px" src="https://1.bp.blogspot.com/-XEA2xyOiWBw/WcT6K82YBvI/AAAAAAAACw4/cRsi0Kq9dF0ANftlDvajXNgXLQKbUeKeACLcBGAs/s753-h380-c/1.png">
+						<h3 style="font-size:15px;">
+							<div style="margin-top:20px;"><a style="margin-top:10px; text-decoration:none; padding:5px 5px; background-color:#ff680d; text-transform:uppercase; color:white;" href="#"><large>Computer</large></a>
+							<i> - June 14, 2017 / 
+								<a style=" margin-top:10px; text-decoration:none; padding:5px 5px; background-color:#ff680d; text-transform:uppercase; color:white;" href="#">
+									<small>1 Comments</small>
+								</a>
+							</i></div>
+						</h3>
+						<h2><a class="ca" style="text-decoration:none;" href="#">Get Free Products From Printvenue.com of worth Rs 400 and get  Rs 100 Extra on Sign Up </a><h2>
+					</div>
+				</section>
+
+				<script>
+				var myIndex = 0;
+				carousel();
+
+				function carousel() 
+				{
+					var i;
+					var x = document.getElementsByClassName("mySlides");
+					for (i = 0; i < x.length; i++) 
+					{
+						x[i].style.display = "none";  
+					}
+					myIndex++;
+					if (myIndex > x.length) {myIndex = 1}    
+					x[myIndex-1].style.display = "block";  
+					setTimeout(carousel, 3000); // Change image every 2 seconds
+				}
+				</script>
+				<br>
+				<section class="e">
+					<section class="e1">
+						<div class="etop">
+							<a href="#"><b>COMPUTER TRICKS</b></a>
+						</div>
+						<div class="etopleft">
+							<a href="#"><i style="margin-right:5px;" class="fa fa-bars"></i>All News</a>
+						</div>
+						<section class="ee1 eetext">
+								<div class="eeImg">
+									<img src="https://1.bp.blogspot.com/-uQ2a09M_2YA/WyKgkPcNniI/AAAAAAAAIn8/qxnpB4f9FvMZs1kaFI4N74k9OAEFvt5QACLcBGAs/s1600/maxresdefault-1.jpg">
+								</div>
+								<a href="#"> VivoBook S - A Perfect  Performer Which is #BeyondTheEgde by #AsusIndia</a>
+								<div class="toe post-date">14 June 2018  <i class="recent-com"></i>1 Comment</div>
+								<p>A Laptop is everyone's need... Doing sleek things from performing high end tasks like developing a...</p>
+						</section>
+						<section class="ee2 eetext2" style="border-bottom:1px solid #ded9d9;"><img class="ee2img" src="https://bit.ly/2HU5yd1">
+							<div style="margin-top:5px;">
+							<a href="#">5 Free Photoshop Alternatives for Mac Users</a></div>				
+							<div class="toe post-date">14 June 2018  <i class="recent-com"></i>1 Comment</div>
+						</section>
+						<section class="ee2 eetext2">
+							<img class="ee2img" src="https://bit.ly/2UXdjCG">
+							<div style="margin-top:5px;">
+								<a href="#">Tweaks about buying a "PC" and "HYPERTHREADING" explained !</a>
+							</div>				
+							<div class="toe post-date">14 June 2018  <i class="recent-com"></i>1 Comment</div>
+						</section>
+					</section>
+					<section class="e2">
+						<div class="etop">
+							<a href="#"><b>COMPUTER TRICKS</b></a>
+						</div>
+						<div class="etopleft">
+							<a href="#"><i style="margin-right:5px;" class="fa fa-bars"></i>All News</a>
+						</div>
+						<section class="ee1 eetext">
+								<div class="eeImg">
+								<img class="eeImg" src="https://bit.ly/2TYqCXd">
+								</div>
+								<a href="#"> VivoBook S - A Perfect  Performer Which is #BeyondTheEgde by #AsusIndia</a>
+								<div class="toe post-date">14 June 2018  <i class="recent-com"></i>1 Comment</div>
+								<p>A Laptop is everyone's need... Doing sleek things from performing high end tasks like developing a...</p>
+						</section>
+						<section class="ee2 eetext2" style="border-bottom:1px solid #ded9d9;">
+							<img class="ee2img" src="https://bit.ly/2CH0Wnb">
+							<div style="margin-top:5px;">
+							<a href="#">5 Free Photoshop Alternatives for Mac Users</a></div>				
+							<div class="toe post-date">14 June 2018  <i class="recent-com"></i>1 Comment</div>
+						</section>
+						<section style="margin-bottom:0px;" class="ee2 eetext2">
+							<img class="ee2img" src="https://bit.ly/2FEnCX5">
+							<div style="margin-top:5px;">
+								<a href="#">Tweaks about buying a "PC" and "HYPERTHREADING" explained !</a>
+							</div>				
+							<div class="toe post-date">14 June 2018  <i class="recent-com"></i>1 Comment</div>
+						</section>
+					</section>
+				</section>
+				<br>
+				<section class="f">
+					<div class="etop">
+							<a href="#"><b>ONLINE COUPONS DEALS</b></a>
+					</div>
+					
+					<div onclick="plusDivs(1)" class="farow" id="next_button">
+						<i  style="font-size:30px;" class="fa fa-angle-right"></i>
+					</div>
+					<div onclick="plusDivs(1)" class="farow" id="previous_button">
+						<i style="font-size:30px;" class="fa fa-angle-left"></i>
+					</div>
+					<div class="fimgs">
+						<div class="fImgText">
+							<img width="280px" height="240px" src="https://bit.ly/2ODocY9">
+							<a href="#">Yes Pay App - Signup and get 20 rs in your Wallet</a>
+						</div>
+						<div class="fImgText">
+							<img width="280px" height="240px" src="https://bit.ly/2uwwBTN">
+							<a href="#">Paytm contest - Get free movie tickets of Wonder Woman Movie</a>
+						</div>
+						<div class="fImgText">
+							<img width="280px" height="240px" src="https://bit.ly/2WvnGhu">
+							<a href="#">Paytm Free Revolution 2017 Calendar - Quick Guide</a>
+						</div>
+						<div class="fImgText">
+							<img width="280px" height="240px" src="https://bit.ly/2YybWMQ">
+							<a href="#">Droom Helmet Flash sale - Get Free Helmet</a>
+						</div>
+					</div>
+					<script>
+						var slideIndex = 1;
+						showDivs(slideIndex);
+
+						function plusDivs(n) {
+						  showDivs(slideIndex += n);
+						}
+
+						function showDivs(n) {
+						  var i;
+						  var x = document.getElementsByClassName("fImgText");
+						  if (n > x.length) {slideIndex = 1}
+						  if (n < 1) {slideIndex = x.length}  
+						  for (i = 0; i < x.length; i++) {
+							x[i].style.display = "flex";  
+						  } 
+							x[slideIndex-1].style.display = "none";
+						  
+						}
+						</script>
+				</section>
+				<br>
+				<section class="g">
+					<div class="etop">
+							<a href="#"><b>TECH TRENDS</b></a>
+					</div>
+					<div style="margin-right:0px;" class="etopleft">
+							<a href="#"><i style="margin-right:5px;" class="fa fa-bars"></i>All News</a>
+					</div>
+					<section class="h htext2">
+							<img style="margin-right:10px;" class="himg" src="https://bit.ly/2CH0Wnb">
+							<div style="margin-top:5px;">
+								<a href="#">5 Free Photoshop Alternatives for Mac Users</a></div>
+							<div class="toe post-date">14 June 2018  <i class="recent-com"></i>1 Comment</div>
+							<p>A Laptop is everyone's need... Doing sleek things from performing high end tasks like developing a...</p>
+					</section>
+					<section class="h htext2">
+							<img style="margin-right:10px;" class="himg" src="https://bit.ly/2uwwBTN">
+							<div style="margin-top:5px;">
+								<a href="#">Paytm contest - Get free movie tickets of Wonder Woman Movie</a></div>
+							<div class="toe post-date">14 June 2018  <i class="recent-com"></i>1 Comment</div>
+							<p>A Laptop is everyone's need... Doing sleek things from performing high end tasks like developing a...</p>
+					</section>
+					<section class="h htext2">
+							<img style="margin-right:10px;" class="himg" src="https://bit.ly/2YybWMQ">
+							<div style="margin-top:5px;">
+								<a href="#">Droom Helmet Flash sale - Get Free Helmet</a></div>
+							<div class="toe post-date">14 June 2018  <i class="recent-com"></i>1 Comment</div>
+							<p>A Laptop is everyone's need... Doing sleek things from performing high end tasks like developing a...</p>
+					</section>
+					<section class="h htext2">
+							<img style="margin-right:10px;" class="himg" src="https://bit.ly/2WvnGhu">
+							<div style="margin-top:5px;">
+								<a href="#">Paytm Free Revolution 2017 Calendar - Quick Guide</a></div>
+							<div class="toe post-date">14 June 2018  <i class="recent-com"></i>1 Comment</div>
+							<p>A Laptop is everyone's need... Doing sleek things from performing high end tasks like developing a...</p>
+					</section>
+				</section>
+				<section class="k ">
+					<div class="kImg">
+						<img style="margin-right:10px;" class="kImg" src="https://bit.ly/2CH0Wnb">
+					</div>
+					<div class="ktext2" style="margin-top:5px;">
+						<a href="#">5 Free Photoshop Alternatives for Mac Users</a></div>
+					<div class="toe post-date">14 June 2018 <i class="fa fa-user">Vishal Tanwnai</i> <i class="recent-com"></i>1 Comment <i class="fa fa-folder-o"></i>computer</div>
+					<p>A Laptop is everyone's need... Doing sleek things from performing high end tasks like developing 
+					sleek things from performing high end tasks like a...</p>
+					<a class="kA" href="#">Continue Reading <i class="fa fa-long-arrow-right"></i></a>
+				</section>
+				<section class="k">
+					<div class="kImg">
+						<img style="margin-right:10px;" class="kImg" src="https://bit.ly/2YybWMQ">
+					</div>
+					<div class="ktext2" style="margin-top:5px;">
+						<a href="#">Droom Helmet Flash sale - Get Free Helmet</a></div>
+					<div class="toe post-date">14 June 2018 <i class="fa fa-user">Vishal Tanwnai</i> <i class="recent-com"></i>1 Comment <i class="fa fa-folder-o"></i>computer</div>
+					<p>A Laptop is everyone's need... Doing sleek things from performing high end tasks like developing 
+					sleek things from performing high end tasks like a...</p>
+					<a class="kA" href="#">Continue Reading <i class="fa fa-long-arrow-right"></i></a>
+				</section>
+				<section class="k">
+					<div class="kImg">
+						<img style="margin-right:10px;" class="kImg" src="https://bit.ly/2uwwBTN">
+					</div>
+					<div class="ktext2" style="margin-top:5px;">
+						<a href="#">Paytm contest - Get free movie tickets of Wonder Woman Movie</a></div>
+					<div class="toe post-date">14 June 2018 <i class="fa fa-user">Vishal Tanwnai</i> <i class="recent-com"></i>1 Comment <i class="fa fa-folder-o"></i>computer</div>
+					<p>A Laptop is everyone's need... Doing sleek things from performing high end tasks like developing 
+					sleek things from performing high end tasks like a...</p>
+					<a class="kA" href="#">Continue Reading <i class="fa fa-long-arrow-right"></i></a>
+				</section>
+				<section class="k">
+					<div class="kImg">
+						<img style="margin-right:10px;" class="kImg" src="https://bit.ly/2WvnGhu">
+					</div>
+					<div class="ktext2" style="margin-top:5px;">
+						<a href="#">Paytm Free Revolution 2017 Calendar - Quick Guide</a></div>
+					<div class="toe post-date">14 June 2018 <i class="fa fa-user">Vishal Tanwnai</i> <i class="recent-com"></i>1 Comment <i class="fa fa-folder-o"></i>computer</div>
+					<p>A Laptop is everyone's need... Doing sleek things from performing high end tasks like developing 
+					sleek things from performing high end tasks like a...</p>
+					<a class="kA" href="#">Continue Reading <i class="fa fa-long-arrow-right"></i></a>
+				</section>
+				<br>
+			</div>
+			<div class="bodyfooter">
+				 <a class="o" href="4-2.html">OLDER POST <i class="fa fa-long-arrow-right"></i></a>
+				<br>
+				<footer class="l">
+					<center>
+						<section class="m">
+							<img src="https://bit.ly/2YAwHHG" height="108px" width="300px">
+							<p style="font-size:18px; font-weight:300; color:#656e7f; line-height:27px; font-family:Poppins;">Sindhzz Tricks Is All-in-one Blog Here You Will Find All Computer Tricks, Android Tricks, Latest Online Coupons And Deals ,Earning<br>
+							Tricks, Whatsapp Mods Updates, Tech News ,Latest Movies Download Links And Some Extra Ordinary Stuff </p>
+							<br>
+							<br>
+							<b> 
+								Contact Us : <a href="#">info@sindhtricks.com </a> <br><br> 
+								<a href="#">-   Contact   -</a>
+								<a href="#">About Us   -</a> 
+								<a href="#">Privacy Policy   -</a> 
+								<a href="#">Terms of Use   -</a> 
+								<a href="#">SiteMap   -</a>
+								<a href="#">Guest Posting -</a> <br>
+								<br>
+							</b>
+							<div class="fa fac fa-pinterest"></div>
+							<div class="fa fac fa-instagram"></div>
+							<div class="fa fac fa-linkedin"></div>
+							<div class="fa fac fa-tumblr"></div>
+							<div class="fa fac fa-google"></div>
+							<div class="fa fac fa-twitter"></div>
+							<div class="fa fac fa-facebook"></div>
+							<br>
+							<br>
+						</section>
+						<section class="n">
+							<br>
+						
+							Copyright &copy; 2016-17<a href="#"> Sindhzz Tricks</a> || Proudly Powered By : <a href="#"> Blogger</a></b> || Made With Love In, <b>INDIA</b> &reg; All Right Reserved <br>
+						</section>
+					</center>
+				</footer>
+			</div>				
+		</div>
+    </body>
+</html>		

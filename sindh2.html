@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="icon" type="image/png" href="https://bit.ly/2WJwlgt" />
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" media="screen and (max-width:700px)" href="700px.css">
+        <title>
+			Sindhzz Tricks - Making you Technical
+		</title>
+		<script language="javascript">
+			var today = new Date();
+			document.getElementById('time').innerHTML=today;
+		 </script>
+		
+    </head>
+    <body>
+		<div class="body">
+			<div class="bodyheader">
+				<header class="a">
+					<div class="lts">
+						<span class="latest">Latest Updates</span>						
+					</div>
+					<div class="date">
+						<script language="Javascript">
+							var dayName = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+							var monName = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+							var now = new Date();
+							document.write("Today is " + dayName[now.getDay()] + ", " + monName[now.getMonth()] + " " + now.getDate() + ".");
+						</script>
+						<script>
+							atoj = new Date();
+							atoj1 = atoj.getHours();
+							atoj2 = atoj.getMinutes();
+							atoj3 = atoj.getSeconds();
+							if (0 == atoj1) {
+							  atoj4 = " AM";
+							  atoj1 = 12;
+							} else if (atoj1 <= 11) atoj4 = " AM"; else if (12 == atoj1) {
+							  atoj4 = " PM";
+							  atoj1 = 12;
+							} else if (atoj1 >= 13) {
+							  atoj4 = " PM";
+							  atoj1 -= 12;
+							}
+							if (atoj2 <= 9) atoj2 = "0" + atoj2;
+							document.write(" |  " + atoj1 + ":" + atoj2 + ":" + atoj3 + atoj4);
+						</script>
+					</div>
+					<div class="topnav" id="myTopnav">
+						<a class="topnava" href="#"></a>
+						<a class="topnava" href="#">About us</a>
+						<a class="topnava" href="#">Contact us</a>
+						<a class="topnava" href="#">Privacy Policy</a>
+						<a class="topnava" href="#">Terms of Use</a>
+						<a class="topnava" href="#">Sitemap</a>
+						<a href="javascript:void(0);" class="topnava icon" onclick="myFunction()">
+							<i class="fa fa-bars"></i>
+						</a>
+					</div>
+					<script>
+						function myFunction() {
+						  var x = document.getElementById("myTopnav");
+						  if (x.className === "topnav") {
+							x.className += " responsive";
+						  } else {
+							x.className = "topnav";
+						  }
+						}
+					</script>
+				</header>
+				<section class="b">
+					<a>
+						<img class="bimg" src="https://2.bp.blogspot.com/-nCCFDbHnyRE/XCy-JDufhYI/AAAAAAAAOgs/xoBJTGOIW10TekksBuxx-556fDrfLtGRACK4BGAYYCw/s1600/onlinelogomaker-102716-1417-1590.png"/>
+					</a>
+					<center>
+						<nav id="menu" class="bb">
+							<input type="checkbox">
+							<label style="margin-left:5px;">
+								<i class="fa fa-bars"></i> Menu
+							</label>
+							<ul>
+								<li class="home">
+									<a href="#"><i class="fa fa-home"></i>Home</a>
+									<ul class="menus">
+										<li><a href="#">About Us</a></li>
+										<li><a href="#">Contact Us</a></li>
+										<li><a href="#">Sitemap</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Android Tricks</a></li>
+								<li><a href="#">Computer Tricks</a></li>
+								<li><a href="#">Online Deals<i class="fa fa-chevron-down"></i></a>
+									<ul class="menus">
+										<li><a href="#">Amazon</a></li>
+										<li><a href="#">Paytm</a></li>
+										<li><a href="#">Freecharge</a></li>
+										<li><a href="#">Flipkart</a></li>
+										<li><a href="#">Book My show</a></li>
+										<li><a href="#">Snapdeal</a></li>
+										<li><a href="#">Mobikwik</a></li>
+										<li><a href="#">ShopClues</a></li>
+										<li><a href="#">Ebay</a></li>
+										<li><a href="#">Payzapp</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Refer &amp; Earn</a></li>
+								<li><a href="#">Whatsapp Zone<i class="fa fa-chevron-down"></i></a>
+									<ul class="menus">
+										<li><a href="#">Whatsapp MODS</a></li>
+										<li><a href="#">Whatsapp DP</a></li>
+										<li><a href="#">Whatsapp Status</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Tech trends</a></li>
+								<li><a href="#">Network Tricks<i class="fa fa-chevron-down"></i></a>
+									<ul class="menus">
+										<li><a href="#">Airtel</a></li>
+										<li><a href="#">Idea</a></li>
+										<li><a href="#">jio</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</center>
+				</section>				
+			</div>
+			<div class="bodyright">
+				<section class="d">
+					<div style="height:60px;">
+						<h2 class="h2">
+							SEARCH BLOG
+						</h2>
+					</div>
+					<form action="/search" method="get" class="dform">
+						<input type="text" placeholder="Search Here..." class="dsearch" name="search" value>
+						<input type="submit" class="searchsubmit" value="submit">
+					</form>
+				</section>
+				<section class="dd">
+						<div style="height:60px;">
+							<h2 class="h2">
+								GET CONNECTED ON FACEBOOK
+							</h2>
+						</div>
+						<img src="face.png" height="250px" width="380px">
+				</section>
+				<section class="ddd">
+					<div style="height:60px;">
+						<h2 class="h2">
+							SOCIAL MEDIA
+						</h2>						
+					</div>
+					<div class="fa facd fa-pinterest"></div>
+					<div class="fa facd fa-instagram"></div>
+					<div class="fa facd fa-linkedin"></div>
+					<div class="fa facd fa-tumblr"></div>
+					<br>
+					<div class="fa facd fa-google"></div>
+					<div class="fa facd fa-twitter"></div>
+					<div class="fa facd fa-facebook"></div>
+					<div class="fa facd fa-flickr"></div>
+					<br><br>
+				</section>
+				<section class="i">
+					<div style="height:60px;">
+						<h2 class="h2">
+							POPULAR POSTS
+						</h2>						
+					</div>
+						<section class="j eetext2">
+							<img class="ee2img"  style="margin-bottom: 10px;" src="https://bit.ly/2UXdjCG">
+							<div style="margin-top:5px;">
+								<a href="#">Tweaks about buying a "PC" and "HYPERTHREADING" explained !</a>
+							</div>
+							<p>Whatsapp Groups are getting more popular , As now...</p>
+						</section>
+						<section class="j eetext2">
+								<img class="ee2img"  style="margin-bottom: 10px;" src="https://bit.ly/2COwt6u">
+								<div style="margin-top:5px;">
+									<a href="#">Latest Whatsapp Group invite links to join</a>
+								</div>
+								
+							<p>Whatsapp Groups are getting more popular , As now...</p>
+						</section>
+						<section class="j eetext2">
+								<img class="ee2img" style="margin-bottom: 10px;" src="https://bit.ly/2TQylkR">
+								<div style="margin-top:5px;">
+									<a href="#">How to Transfer Paytm Money to Freecharge ,Mobikwik & Oxygen Wallet</a>
+								</div>
+								<p>Whatsapp Groups are getting more popular , As now...</p>
+						</section>
+						<section class="j eetext2">
+								<img class="ee2img"  style="margin-bottom: 10px;" src="https://bit.ly/2COwt6u">
+								<div style="margin-top:5px;">
+									<a href="#">Whatsapp Group invite links | Join Unlimited Whatsapp Groups</a>
+								</div>
+								<p>Whatsapp Groups are getting more popular , As now...</p>
+						</section>
+						<section class="j eetext2">
+								<img class="ee2img"  style="margin-bottom: 10px;" src="https://bit.ly/2uDoUv9">
+								<div style="margin-top:5px;">
+									<a href="#">-Man Behind SindzzTricks-</a>
+								</div>
+								<p>Whatsapp Groups are getting more popular , As now...</p>
+						</section>					
+				</section>
+				<section class="p">
+					<img src="email.png" heigt="350px" style="margin:10px 0px;" width="370px">
+				</section>
+				<section class="q">
+						<div style="height:60px;">
+								<h2 class="h2">
+									STATS
+								</h2>
+							</div>
+				</section>
+				<section class="r">
+					<img src="ad1.png" width="90%" height="auto">
+				</section>
+			</div>
+			<div class="bodyleft">
+				
+				<section class="k ">
+					<div class="kImg">
+						<img style="margin-right:10px;" class="kImg" src="https://bit.ly/2CH0Wnb">
+					</div>
+					<div class="ktext2" style="margin-top:5px;">
+						<a href="#">5 Free Photoshop Alternatives for Mac Users</a></div>
+					<div class="toe post-date">14 June 2018 <i class="fa fa-user">Vishal Tanwnai</i> <i class="recent-com"></i>1 Comment <i class="fa fa-folder-o"></i>computer</div>
+					<p>A Laptop is everyone's need... Doing sleek things from performing high end tasks like developing 
+					sleek things from performing high end tasks like a...</p>
+					<a class="kA" href="#">Continue Reading <i class="fa fa-long-arrow-right"></i></a>
+				</section>
+				<section class="k">
+					<div class="kImg">
+						<img style="margin-right:10px;" class="kImg" src="https://bit.ly/2YybWMQ">
+					</div>
+					<div class="ktext2" style="margin-top:5px;">
+						<a href="#">Droom Helmet Flash sale - Get Free Helmet</a></div>
+					<div class="toe post-date">14 June 2018 <i class="fa fa-user">Vishal Tanwnai</i> <i class="recent-com"></i>1 Comment <i class="fa fa-folder-o"></i>computer</div>
+					<p>A Laptop is everyone's need... Doing sleek things from performing high end tasks like developing 
+					sleek things from performing high end tasks like a...</p>
+					<a class="kA" href="#">Continue Reading <i class="fa fa-long-arrow-right"></i></a>
+				</section>
+				<section class="k">
+					<div class="kImg">
+						<img style="margin-right:10px;" class="kImg" src="https://bit.ly/2uwwBTN">
+					</div>
+					<div class="ktext2" style="margin-top:5px;">
+						<a href="#">Paytm contest - Get free movie tickets of Wonder Woman Movie</a></div>
+					<div class="toe post-date">14 June 2018 <i class="fa fa-user">Vishal Tanwnai</i> <i class="recent-com"></i>1 Comment <i class="fa fa-folder-o"></i>computer</div>
+					<p>A Laptop is everyone's need... Doing sleek things from performing high end tasks like developing 
+					sleek things from performing high end tasks like a...</p>
+					<a class="kA" href="#">Continue Reading <i class="fa fa-long-arrow-right"></i></a>
+				</section>
+				<section class="k">
+					<div class="kImg">
+						<img style="margin-right:10px;" class="kImg" src="https://bit.ly/2WvnGhu">
+					</div>
+					<div class="ktext2" style="margin-top:5px;">
+						<a href="#">Paytm Free Revolution 2017 Calendar - Quick Guide</a></div>
+					<div class="toe post-date">14 June 2018 <i class="fa fa-user">Vishal Tanwnai</i> <i class="recent-com"></i>1 Comment <i class="fa fa-folder-o"></i>computer</div>
+					<p>A Laptop is everyone's need... Doing sleek things from performing high end tasks like developing 
+					sleek things from performing high end tasks like a...</p>
+					<a class="kA" href="#">Continue Reading <i class="fa fa-long-arrow-right"></i></a>
+				</section>
+				<section class="k ">
+					<div class="kImg">
+						<img style="margin-right:10px;" class="kImg" src="https://bit.ly/2CH0Wnb">
+					</div>
+					<div class="ktext2" style="margin-top:5px;">
+						<a href="#">5 Free Photoshop Alternatives for Mac Users</a></div>
+					<div class="toe post-date">14 June 2018 <i class="fa fa-user">Vishal Tanwnai</i> <i class="recent-com"></i>1 Comment <i class="fa fa-folder-o"></i>computer</div>
+					<p>A Laptop is everyone's need... Doing sleek things from performing high end tasks like developing 
+					sleek things from performing high end tasks like a...</p>
+					<a class="kA" href="#">Continue Reading <i class="fa fa-long-arrow-right"></i></a>
+				</section>
+				<section class="k">
+					<div class="kImg">
+						<img style="margin-right:10px;" class="kImg" src="https://bit.ly/2YybWMQ">
+					</div>
+					<div class="ktext2" style="margin-top:5px;">
+						<a href="#">Droom Helmet Flash sale - Get Free Helmet</a></div>
+					<div class="toe post-date">14 June 2018 <i class="fa fa-user">Vishal Tanwnai</i> <i class="recent-com"></i>1 Comment <i class="fa fa-folder-o"></i>computer</div>
+					<p>A Laptop is everyone's need... Doing sleek things from performing high end tasks like developing 
+					sleek things from performing high end tasks like a...</p>
+					<a class="kA" href="#">Continue Reading <i class="fa fa-long-arrow-right"></i></a>
+				</section>
+				<section class="k">
+					<div class="kImg">
+						<img style="margin-right:10px;" class="kImg" src="https://bit.ly/2uwwBTN">
+					</div>
+					<div class="ktext2" style="margin-top:5px;">
+						<a href="#">Paytm contest - Get free movie tickets of Wonder Woman Movie</a></div>
+					<div class="toe post-date">14 June 2018 <i class="fa fa-user">Vishal Tanwnai</i> <i class="recent-com"></i>1 Comment <i class="fa fa-folder-o"></i>computer</div>
+					<p>A Laptop is everyone's need... Doing sleek things from performing high end tasks like developing 
+					sleek things from performing high end tasks like a...</p>
+					<a class="kA" href="#">Continue Reading <i class="fa fa-long-arrow-right"></i></a>
+				</section>
+				<section class="k">
+					<div class="kImg">
+						<img style="margin-right:10px;" class="kImg" src="https://bit.ly/2WvnGhu">
+					</div>
+					<div class="ktext2" style="margin-top:5px;">
+						<a href="#">Paytm Free Revolution 2017 Calendar - Quick Guide</a></div>
+					<div class="toe post-date">14 June 2018 <i class="fa fa-user">Vishal Tanwnai</i> <i class="recent-com"></i>1 Comment <i class="fa fa-folder-o"></i>computer</div>
+					<p>A Laptop is everyone's need... Doing sleek things from performing high end tasks like developing 
+					sleek things from performing high end tasks like a...</p>
+					<a class="kA" href="#">Continue Reading <i class="fa fa-long-arrow-right"></i></a>
+				</section>
+				<section class="k ">
+					<div class="kImg">
+						<img style="margin-right:10px;" class="kImg" src="https://bit.ly/2CH0Wnb">
+					</div>
+					<div class="ktext2" style="margin-top:5px;">
+						<a href="#">5 Free Photoshop Alternatives for Mac Users</a></div>
+					<div class="toe post-date">14 June 2018 <i class="fa fa-user">Vishal Tanwnai</i> <i class="recent-com"></i>1 Comment <i class="fa fa-folder-o"></i>computer</div>
+					<p>A Laptop is everyone's need... Doing sleek things from performing high end tasks like developing 
+					sleek things from performing high end tasks like a...</p>
+					<a class="kA" href="#">Continue Reading <i class="fa fa-long-arrow-right"></i></a>
+				</section>
+				<section class="k">
+					<div class="kImg">
+						<img style="margin-right:10px;" class="kImg" src="https://bit.ly/2YybWMQ">
+					</div>
+					<div class="ktext2" style="margin-top:5px;">
+						<a href="#">Droom Helmet Flash sale - Get Free Helmet</a></div>
+					<div class="toe post-date">14 June 2018 <i class="fa fa-user">Vishal Tanwnai</i> <i class="recent-com"></i>1 Comment <i class="fa fa-folder-o"></i>computer</div>
+					<p>A Laptop is everyone's need... Doing sleek things from performing high end tasks like developing 
+					sleek things from performing high end tasks like a...</p>
+					<a class="kA" href="#">Continue Reading <i class="fa fa-long-arrow-right"></i></a>
+				</section>
+				<br>
+			</div>
+			<div class="bodyfooter">
+				<footer class="l">
+					<center>
+						<section class="m">
+							<img src="https://bit.ly/2YAwHHG" height="108px" width="300px">
+							<p style="font-size:18px; font-weight:300; color:#656e7f; line-height:27px; font-family:Poppins;">Sindhzz Tricks Is All-in-one Blog Here You Will Find All Computer Tricks, Android Tricks, Latest Online Coupons And Deals ,Earning<br>
+							Tricks, Whatsapp Mods Updates, Tech News ,Latest Movies Download Links And Some Extra Ordinary Stuff </p>
+							<br>
+							<br>
+							<b style="color:rgb(66, 66, 66); font-size:20px;">Contact Us :</b>
+							<b> 
+								 <a href="#">info@sindhtricks.com </a> <br><br> 
+								<a href="#">-   Contact   -</a>
+								<a href="#">About Us   -</a> 
+								<a href="#">Privacy Policy   -</a> 
+								<a href="#">Terms of Use   -</a> 
+								<a href="#">SiteMap   -</a>
+								<a href="#">Guest Posting -</a> <br>
+								<br>
+							</b>
+							<div class="fa fac fa-pinterest"></div>
+							<div class="fa fac fa-instagram"></div>
+							<div class="fa fac fa-linkedin"></div>
+							<div class="fa fac fa-tumblr"></div>
+							<div class="fa fac fa-google"></div>
+							<div class="fa fac fa-twitter"></div>
+							<div class="fa fac fa-facebook"></div>
+							<br>
+							<br>
+						</section>
+						<section class="n">
+							<br>
+						
+							Copyright &copy; 2016-17<a href="#"> Sindhzz Tricks</a> || Proudly Powered By : <a href="#"> Blogger</a></b> || Made With Love In, <b>INDIA</b> &reg; All Right Reserved <br>
+						</section>
+					</center>
+				</footer>
+			</div>				
+		</div>
+    </body>
+</html>
