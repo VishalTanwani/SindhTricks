@@ -490,3 +490,91 @@
 					font-size:20px;
 					transition: color 0.2s;
 				}
+				.post
+				{
+					width: 100%;
+					background-color:white;
+					height: auto;
+					color:#333;
+					margin-top:20px;
+					padding:10px 0px;
+					margin-bottom:10px; 
+					margin-left:0px;
+				}
+				.z
+				{
+					width: 100%;
+					background-color:white;
+					height: auto;
+					margin-bottom:10px;
+					margin-top:10px;
+					margin-left:0px; 
+					padding:0px;
+				}
+				.w
+				{
+					width: 100%;
+					background-color:white;
+					height: auto;
+					display:inline;
+					margin-bottom:10px;
+					margin-top:10px;
+					margin-left:0px; 
+				}
+				.x
+				{
+					width: 100%;
+					background-color:white;
+					height: auto;
+					float:left;
+					display:block;
+					margin:5px 00px 0px 0px;
+					overflow:auto;
+					border-bottom:1px solid #ded9d9;
+				}
+				.side
+				{
+					display:none;
+				}
+				.posts
+				{
+					width:90%;
+					height:200px;
+				}
+				.postimg
+				{
+					display:block; 
+					margin-left:150px;
+					width:100%;
+					height:250px;
+					clear:both;
+					margin:0px 0px 0px 0px;
+				}
+				.mm
+				{
+					display:none;
+				}
+				.fam
+				{
+					width: auto;
+					height:auto;
+					position:absolute;
+					border-radius:15px;
+					text-align: center;
+					line-height:40px;
+					padding:2px 10px;
+					margin:2px;
+					font-size:25px;
+					text-decoration: none;
+				}
+				.v1
+				{
+					left:3%;
+				}
+				.v2
+				{
+					left:20%;
+				}
+				.v3{left:40%;}
+				.v4{left:60%;}
+				.v5{left:80%;}
