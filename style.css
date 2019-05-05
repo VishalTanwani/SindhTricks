@@ -743,7 +743,7 @@
 				border:2px solid #ff680d;
 				text-decoration:none;
 				width:170px;
-				margin-left: 617px;
+				margin-left: 46%;
 				text-align: center;
 				font-size: 20px;
             }
@@ -859,7 +859,6 @@
             }
 			.m a
 			{
-				width:100%;
 				text-decoration:none;
 				color:#ff680d;
 				font-size:20px;
